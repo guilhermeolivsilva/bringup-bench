@@ -1,0 +1,75 @@
+RM  /home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV/
+CC  test.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/fll-v1.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/freq-domains.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/pulp/kernel/chips/pulp/soc.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pmsis/pmsis_bsp/fs/read_fs/read_fs.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pmsis/pmsis_bsp/fs/host_fs/semihost.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pmsis/pmsis_bsp/fs/host_fs/host_fs.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pmsis/pmsis_bsp/fs/fs.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pmsis/pmsis_bsp/bsp/pulp.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/lib/libc/minimal/io.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/lib/libc/minimal/fprintf.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/lib/libc/minimal/prf.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/lib/libc/minimal/sprintf.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/lib/libc/minimal/semihost.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/init.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/kernel.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/device.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/task.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/alloc.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/alloc_pool.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/irq.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/soc_event.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/log.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/time.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/pulp/drivers/uart/uart-v1.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/pulp/drivers/udma/udma-v3.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/pulp/drivers/cluster/cluster.c
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/crt0.S
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/irq_asm.S
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/task_asm.S
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/time_asm.S
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/common/kernel/soc_event_v2_itc.S
+CC  /home/guilhermeoliveiras/projects/pulpissimo/sdk/rtos/pulpos/pulp/drivers/cluster/pe-eu-v3.S
+LD  /home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV//test/test
+/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gapy_v2/bin/gapy --target=pulp-open --target-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gvsoc/pulp/targets --target-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gapy/targets --platform=gvsoc --work-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV/ --binary=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV//test/test --config-opt=cluster/nb_pe=8      --flash-property=boot@flash:rom:boot --flash-property=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV//test/test@flash:rom:binary image
+/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gapy_v2/bin/gapy --target=pulp-open --target-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gvsoc/pulp/targets --target-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gapy/targets --platform=gvsoc --work-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV/ --binary=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV//test/test --config-opt=cluster/nb_pe=8      --flash-property=boot@flash:rom:boot --flash-property=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV//test/test@flash:rom:binary flash
+/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gapy_v2/bin/gapy --target=pulp-open --target-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gvsoc/pulp/targets --target-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tools/gapy/targets --platform=gvsoc --work-dir=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV/ --binary=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV//test/test --config-opt=cluster/nb_pe=8      --flash-property=boot@flash:rom:boot --flash-property=/home/guilhermeoliveiras/projects/pulpissimo/sdk/tests/ackermann/BUILD/PULP/GCC_RISCV//test/test@flash:rom:binary image flash run
+
+x + y = 0:
+
+A(0, 0) = 1
+
+x + y = 1:
+
+A(1, 0) = 2
+A(0, 1) = 2
+
+x + y = 2:
+
+A(2, 0) = 3
+A(1, 1) = 3
+A(0, 2) = 3
+
+x + y = 3:
+
+A(3, 0) = 4
+A(2, 1) = 4
+A(1, 2) = 5
+A(0, 3) = 5
+
+x + y = 4:
+
+A(4, 0) = 5
+A(3, 1) = 5
+A(2, 2) = 7
+A(1, 3) = 13
+A(0, 4) = 13
+
+x + y = 5:
+
+A(5, 0) = 6
+A(4, 1) = 6
+A(3, 2) = 9
+A(2, 3) = 29
